@@ -1,0 +1,18 @@
+1. Create a new project using "ng new <project-name>"
+2. cd <project-name>
+3. Drag and drop the folder in editor to view the folder structure
+4. In path src/app/app.component.ts view the basic structure containing the import, component and class
+5. Generate component in ur project structure by using "ng g component <name-of-the-component>"
+6. Check the <name-of-the-component> folder in app folder. Inside, it generates 4 files: CSS, HTML, TS (component class) and a .spec.ts file for unit tests.
+
+**Doubt**
+If we want to delete already existing component and see the effect in the package structure.
+I used > ng d component <component name> which gave me an error : "The destroy command is not supported by Angular CLI."
+So I deleted the folder manually, but the dependency in app.module.ts remains   
+**Any answer?**
+
+7. After having all the new created and updated files in the project structure for new component, do the following steps:
+> Change the message in new-component.html if required
+> Go to the new-component.ts, copy the name of selector from there denoting the name of the new component 
+> Goto the original app.component.html, add a new tag by the name copied from above (open-close tag)
+> Goto cmd, type "ng serve" and see the output on the port specified (http://localhost:4200/)
