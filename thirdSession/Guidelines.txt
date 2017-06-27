@@ -1,0 +1,38 @@
+****************** Templating Basics in Angular 4 ****************** 
+
+1. Inline & External templating
+2. Interpolation
+3. ngFor
+4. ngIf,Else & Then
+
+For Hands On
+1. To change the template for the particular application, go to "app.component.ts", where you can edit the templateUrl in @Component section, by giving the source of html file present in the "app "package as './app.component.html'(by default) or './app.<filename>.html' 
+or we can define our own template using html(single or multi lines) in template section under @Component
+for example in case of single line html code:
+@Component({
+  selector: 'app-root',
+  template: '<h1>html in template</h1>',			// templateUrl is changed to template
+  styleUrls: ['./app.component.css']
+})
+for example in case of multi lines html code:
+@Component({
+  selector: 'app-root',
+  template: `<h1> html in template </h1>			//change single ' to ` for multi-line html code
+  <p>multi line html template design </p>`,
+  styleUrls: ['./app.component.css']
+})
+
+**Doubt : ** 
+1. Why can't any other html outside app folder be used in templateUrl?
+2. Can 2 templates be used simultaneously ?
+Observation :
+tried implementing both template and templateUrl, but template is given preference and template(html) part gets executed
+
+
+2. Add comments by using // or /*.... */ for single and multi lines respectively. 
+
+3. We can create our objects and use them in template under export class AppComponent{}
+
+4. Creating array
+
+
