@@ -1,6 +1,6 @@
 # Angular4
 
-****************************************** BASIC STEPS TO KICKSTART WITH ANGULAR 4 ********************************************
+********************* BASIC STEPS TO KICKSTART WITH ANGULAR 4 **********************
 
 Installation : (Installing Angular4 with AngularCLI) 
 3 basic necessary pre-requistes for Angular4 project setup
